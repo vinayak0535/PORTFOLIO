@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Varela Round", serif;
+}
+
+:root {
+    --primary-color: #1D4ED8;
+}
+
+.hero img {
+    border-radius: 50%;
+    height: 460px;
+    width: 440px;
+    margin-left: 50px;
+    /* border: 3px solid #fff; */
+    border: 8px solid #fff;
+}
+
+body {
+    background: #e2efff;
+}
+
+.animation {
+    display: flex;
+    overflow: hidden;
+    height: 8vh;
+}
+
+.text-container {
+    font-size: 2rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid blue;
+    color: var(--primary-color);
+    animation: caret 0.5s steps(1) infinite;
+
+}
+
+.heading {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+    position: relative;
+}
+
+.heading::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    left: 47%;
+    height: 6px;
+    border-radius: 8px;
+    background-color: #1D4ED8;
+    bottom: -10px;
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+section.about ul li {
+    list-style: none;
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    color: #2c2c2c;
+
+}
+section.about img{
+    width: 600px;
+    border-radius: 8px;
+}
+
+section.about ul li i {
+    color: #2359ee;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+/* skills */
+
+.techno {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.techno div {
+    padding: 4px 10px;
+    background-color: #EFF6FF;
+    color: #2359ee;
+    margin-inline: 5px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+.s-col {
+    background-color: #FFFFFF;
+    padding: 10px 25px;
+    margin-inline: 10px;
+    /* width: 420px; */
+    border-radius: 8px;
+    margin-top: 40px;
+    /* width: 30%;    */
+    width: 420px;
+    height: 300px;
+}
+
+.s-col:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5%);
+    transition: all 0.2s ease-in-out;
+
+}
+
+.s-col P {
+    color: #444;
+    font-size: 14px;
+}
+
+.s-col h5 {
+    padding-block: 10px;
+}
+
+.s-col i {
+    font-size: 35px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.s-col:nth-child(2) i {
+    color: #CA8A04;
+}
+
+.s-col:nth-child(3) i {
+    color: #320E3B;
+}
+
+.s-col:nth-child(4) i {
+    color: #9333EA;
+}
+
+.s-col:nth-child(5) i {
+    color: #DB2676;
+}
+
+.s-col:nth-child(6) i {
+    color: #2792008f;
+}
+
+.s-col h5 {
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+
+.s-col input {
+    width: 100%;
+    height: 30px;
+    padding-block: 10px;
+}
+
+
+
+
+.card {
+    border: none;
+    outline: none;
+    /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+
+}
+
+.card:hover{
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01);
+    /* transition: all 5ms ease-in-out; */
+    transition: all 0.2s ease-in-out;
+
+
+}
+
+.card img {
+    height: 220px;
+    background-size: cover;
+}
+
+.card-body{
+    margin-top: 15px;
+}
+
+textarea:focus{
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+
+}
+
+header{
+    background-color: #ddd;
+  color: white;
+  position: fixed; /* Fixes the header at the top */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensures the header stays on top of other elements */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color: #a5d2e7;
+
+}
+
+section {
+    scroll-margin-top: 80px; /* Matches the height of the fixed header */
+  }
+
+  @media (max-width:750px) {
+    section.about img{
+        width: 500px;
+    }
+
+    section.about p{
+        font-size: 16px;
+    }
+    
+  }
